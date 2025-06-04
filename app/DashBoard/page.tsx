@@ -3,25 +3,31 @@ import React from "react";
 
 const DashBoard = () => {
   return (
-    <div className="flex flex-col ml-3">
-      <nav className="border border-green-500">
+    <div className="flex flex-col ml-3 h-screen">
+      <nav className="border-2 border-white  h-[7%]">
         <h1># QR code Generator</h1>
       </nav>
-      <div className="h-screen flex flex-row gap-10 mt-10 border border-amber-600">
-        <div className="flex flex-col items-center gap-10 w-[25%]">
-          <div className="border bg-pink-300/25 h-[60%] w-[80%]">Code Display</div>
-          <div className="flex flex-row gap-20 justify-center w-[100%] border border-red-300">
-            <div>PNG</div>
-            <div>JPG</div>
-            <div>SVG</div>
+      <div className="h-screen flex flex-row gap-10 pt-3 border border-amber-600">
+        {/* left section*/}
+        <div className="flex flex-col items-end gap-3 w-[25%]">
+          <div className="h-[60%] w-[75%] border rounded-xl bg-amber-50">
+            <img className=" object-contain h-[100%]" src="/qr-code.png" alt="" />
           </div>
-          <button className="bg-blue-400 w-[50%] h-[40px] rounded-lg">Download</button>
+          <div className="flex flex-row gap-5 justify-center w-[75%] h-[5%] ">
+            <button className="bg-[#293829] w-[30%] h-[100%] rounded-lg">PNG</button>
+            <button className="bg-[#293829] w-[30%] h-[100%] rounded-lg">JPG</button>
+            <button className="bg-[#293829] w-[30%] h-[100%] rounded-lg">SVG</button>
+          </div>
+          <button className="font-bold text-lg bg-[#293829] w-[75%] h-[40px] rounded-lg ">Download</button>
         </div>
-        <div className="flex flex-col gap-3">
-          <h1>Generate Your QR code</h1>
-          <textarea name="message" placeholder="Enter your message here..."></textarea>
-          <button className="border bg-green-700">Generate</button>
+
+        {/* right section */}
+        <div className="flex flex-col gap-3 w-[50%] border border-white">
+          <h1 className="text-[30px]">Generate Your QR code</h1>
+          <textarea className="" name="message" placeholder="Enter your message here..."></textarea>
+          <button className="text-neutral-950 font-bold text-3xl bg-[#0DF20D] rounded-xl w-[30%] h-12">Generate</button>
         </div>
+      
       </div>
     </div>
   );
