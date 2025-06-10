@@ -22,9 +22,9 @@ const DashBoard = () => {
         </div>
 
         {/* right section */}
-        <div className="flex flex-col gap-3 w-[50%] border border-white">
+        <div className="flex flex-col gap-6 w-[50%]">
           <h1 className="text-[30px]">Generate Your QR code</h1>
-          <textarea className="" name="message" placeholder="Enter your message here..."></textarea>
+          <textarea className="w-[62%] min-h-[20%] bg-[#1C261C] border-1 border-[#3B543B] rounded-xl" name="message" placeholder=""></textarea>
           <button className="text-neutral-950 font-bold text-3xl bg-[#0DF20D] rounded-xl w-[30%] h-12">Generate</button>
         </div>
       
