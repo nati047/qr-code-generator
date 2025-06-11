@@ -4,10 +4,10 @@ import React from "react";
 const DashBoard = () => {
   return (
     <div className="flex flex-col ml-3 h-screen">
-      <nav className="border-2 border-white  h-[7%]">
-        <h1># QR code Generator</h1>
+      <nav className="border-b-2 border-[#595e5a]  h-[8%] flex flex-row items-center">
+        <p className="ml-[6%] text-xl">QR code Generator</p>
       </nav>
-      <div className="h-screen flex flex-row gap-10 pt-3 border border-amber-600">
+      <div className="h-screen flex flex-row gap-10 pt-3 ">
         {/* left section*/}
         <div className="flex flex-col items-end gap-3 w-[25%]">
           <div className="h-[60%] w-[75%] border rounded-xl bg-amber-50">
@@ -23,7 +23,7 @@ const DashBoard = () => {
 
         {/* right section */}
         <div className="flex flex-col gap-6 w-[50%]">
-          <h1 className="text-[30px]">Generate Your QR code</h1>
+          <h1 className="text-[30px] font-bold">Generate Your QR code</h1>
           <textarea className="w-[62%] min-h-[20%] bg-[#1C261C] border-1 border-[#3B543B] rounded-xl" name="message" placeholder=""></textarea>
           <button className="text-neutral-950 font-bold text-3xl bg-[#0DF20D] rounded-xl w-[30%] h-12">Generate</button>
         </div>
