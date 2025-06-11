@@ -7,7 +7,7 @@ const DashBoard = () => {
       <nav className="border-b-2 border-[#595e5a]  h-[8%] flex flex-row items-center">
         <p className="ml-[6%] text-xl">QR code Generator</p>
       </nav>
-      <div className="h-screen flex flex-row gap-10 pt-3 ">
+      <div className="h-screen flex flex-row gap-10 pt-10 ">
         {/* left section*/}
         <div className="flex flex-col items-end gap-3 w-[25%]">
           <div className="h-[60%] w-[75%] border rounded-xl bg-amber-50">
